@@ -1,5 +1,8 @@
 ## 安装
 按照官网进行就行
+### 第一步中的Prerequisites.Dockerfile需要去github上下载epic的carla，但是教程还是使用用户名密码登录，现在github已经不支持了，要用token，修改该文件中的50行为；
+RUN git clone --depth 1 -b carla "https://$token$@github.com/CarlaUnreal/UnrealEngine.git" ${UE4_ROOT}
+
 
 ## 问题
 ### fbx-sdk一直下载不下来
