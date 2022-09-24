@@ -13,7 +13,7 @@ vim carla/Util/Docker/Carla.Dockerfile
 在第12行插入以下命令用于替换文件中的网址和命令
 ```
   sed -i "s/autodesk.com/autodesk.com.cn/g" Util/BuildTools/BuildUtilsDocker.sh && \
-  sed -i "s/-P "${CARLA_DOCKER_UTILS_FOLDER}"/-P "${CARLA_DOCKER_UTILS_FOLDER}" --no-check-certificate/g" Util/BuildTools/BuildUtilsDocker.sh && \
+  sed -i "s/-c "${FBXSDK_URL}"/-c "${FBXSDK_URL}" --no-check-certificate/g" Util/BuildTools/BuildUtilsDocker.sh && \  （这个好像网好的时候也可以不用）
 ```
 然后保存退出：
 ```
